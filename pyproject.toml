@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "insight-agent-engine"
+version = "0.1.0"
+description = "Headless Python library for advanced marketing analysis with AI agents"
+authors = ["InsightAgent <info@insightagent.ai>"]
+readme = "README.md"
+packages = [{include = "insight_agent"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+langgraph = "^0.2.0"
+langchain = "^0.3.0"
+langchain-openai = "^0.2.0"
+pydantic = "^2.0"
+pandas = "^2.2.0"
+numpy = "^1.26.0"
+python-dotenv = "^1.0.0"
+fastapi = "^0.115.0"
+uvicorn = "^0.30.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.0.0"
+black = "^24.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
